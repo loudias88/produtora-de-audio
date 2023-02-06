@@ -54,5 +54,24 @@ export const MobileIcon = styled.div`
 
 export const NavMenu = styled.ul`
     display: flex;
-    align-items:center;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+
+    @media creen and (max-width: 960px) {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 90vh;
+        position: absolute;
+        top: 80px;
+        left: ${({click}) => (click ? 0 : '-100%')};
+        opacity: 1;
+        transition: all 0.5s ease;
+        background: #101522;
+
+
+    }
 `;
+
+export const NavItem = styled.li``
